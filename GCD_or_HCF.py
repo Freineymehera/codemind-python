@@ -1,7 +1,6 @@
 a,b=map(int,input().split())
-if a>b:
-    a,b=b,a
-while a:
-    b=b%a
-    a,b=b,a
-print(b)
+hcf=1
+for i in range(1,max(a,b)):
+    if a%i==0 and b%i==0:
+        hcf=i
+print(hcf)
