@@ -1,0 +1,7 @@
+n=int(input())
+x=list(map(int,input().split()))
+s,sx=(x[:n//2]),(x[n//2:])
+b=sum(s)
+a=sum(sx)
+print(b)
+print(a)
